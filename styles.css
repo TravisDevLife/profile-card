@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+:root {
+    --primary-color-200: hsl(185, 75%, 39%);
+    --primary-color-400: hsl(227, 10%, 46%);
+    --primary-color-800: hsl(229, 23%, 23%);
+    --neutral-color-200: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--primary-color-200);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.patternTop {
+    width: 85%;
+    min-height: 20%;
+    border-radius: 20px 20px 0 0;
+}
+
+.bottomContainer {
+    background-color: #fff;
+    height: 30%;
+    width: 85%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    box-shadow: 1px 1px 1px rgb(43, 43, 43);
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileDetails h1 {
+    color: var(--primary-color-800);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.profileDetails h2 {
+    color: var(--neutral-color-200);
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.profileInfo p {
+    color: var(--neutral-color-200);
+    font-weight: normal;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.profileDiv {
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutral-color-200);
+    opacity: .3;
+    margin: 30px 0 10px 0;
+}
+
+.profileStats {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileFollowers, .profileLikes, .profilePhotos {
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 15px;
+}
+
+.profileFollowers h1, .profileLikes h1, .profilePhotos h1 {
+    font-size: 21px;
+    font-weight:900;
+    color: var(--primary-color-800);
+    margin-bottom: 5px;
+}
+
+.profileFollowers p, .profileLikes p, .profilePhotos p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--neutral-color-200);
+}
+
+.avatar {
+    position: absolute;
+    border: 5px solid white;
+    margin-bottom: 120px;
+    border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+    .profileDiv {
+        height: 2px;
+        margin: 30px 0 30px 0;
+    }
+
+    .profileFollowers h1, .profileLikes h1, .profilePhotos h1 {
+        font-size: 32px;
+    }
+    
+    .profileFollowers p, .profileLikes p, .profilePhotos p {
+        font-size: 20px;
+    }
+
+    .profileDetails h1, .profileDetails h2 {
+        font-size: 32px;
+    }    
+    
+    .profileInfo {
+        margin-top: 20px;
+    }
+    
+    .profileInfo p {
+        font-size: 25px;
+    }
+
+    .avatar {
+        margin-bottom: 99px;
+        height: 137px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profileDiv {
+        height: 2px;
+        margin: 40px 0 50px 0;
+    }
+
+    .profileFollowers, .profileLikes, .profilePhotos {
+        margin-inline: 50px;
+    }
+
+    .profileFollowers h1, .profileLikes h1, .profilePhotos h1 {
+        font-size: 50px;
+    }
+    
+    .profileFollowers p, .profileLikes p, .profilePhotos p {
+        font-size: 25px;
+    }
+
+    .profileDetails {
+        margin-top: 20px;
+    }
+
+    .profileDetails h1, .profileDetails h2 {
+        font-size: 40px;
+    }
+    
+    .profileInfo p {
+        font-size: 30px;
+    }
+
+    .avatar {
+        margin-bottom: 99px;
+        height: 180px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .patternTop {
+        width: 25%;
+        height: 10%;
+    }
+
+    .bottomContainer {
+        width: 25%;
+    }
+    
+    .profileDiv {
+        height: 2px;
+        margin: 30px 0 40px 0;
+    }
+
+    .profileFollowers, .profileLikes, .profilePhotos {
+        margin-inline: 40px;
+    }
+
+    .profileFollowers h1, .profileLikes h1, .profilePhotos h1 {
+        font-size: 20px;
+    }
+    
+    .profileFollowers p, .profileLikes p, .profilePhotos p {
+        font-size: 15px;
+    }
+
+    .profileDetails {
+        margin-top: 10px;
+    }
+
+    .profileDetails h1, .profileDetails h2 {
+        font-size: 20px;
+    }
+    
+    .profileInfo p {
+        font-size: 20px;
+    }
+
+    .avatar {
+        margin-bottom: 160px;
+        height: 120px;
+        width: auto;
+    }
+}
+
+@media (min-width: 2560px) {
+    .patternTop {
+        width: 30%;
+    }
+
+    .bottomContainer {
+        width: 30%;
+    }
+    
+    .profileDiv {
+        height: 2px;
+        margin: 40px 0 50px 0;
+    }
+
+    .profileFollowers, .profileLikes, .profilePhotos {
+        margin-inline: 50px;
+    }
+
+    .profileFollowers h1, .profileLikes h1, .profilePhotos h1 {
+        font-size: 50px;
+    }
+    
+    .profileFollowers p, .profileLikes p, .profilePhotos p {
+        font-size: 25px;
+    }
+
+    .profileDetails {
+        margin-top: 10px;
+    }
+
+    .profileDetails h1, .profileDetails h2 {
+        font-size: 40px;
+    }
+    
+    .profileInfo p {
+        font-size: 30px;
+    }
+
+    .avatar {
+        margin-bottom: 160px;
+        height: 180px;
+        width: auto;
+    }
+}
